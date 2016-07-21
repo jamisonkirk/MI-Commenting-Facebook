@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+  	<!-- $Header: svn+ssh://srcctl.devel.nandomedia.com/nm/devel/subversion/support/js-libs/tags/js-libs_1.3/MI_Commenting_Facebook/test/micommenting_facebook_tests.html 38 2013-11-21 19:29:34Z jwhetzel $ -->
+    <title>MI_Commenting_Facebook Unit Tests</title>
+    <link rel="stylesheet" href="/home/jkirk/MyWork/Code/Testing/qunit-1.10.0.css"/>
+    
+	<meta property="og:description" content="<article description">
+	<meta property="og:url" content="<page url>"/>
+	<meta property="og:site_name" content="<site display name>"/>
+	<meta property="og:type" content="<page type>"/>
+	
+	<meta property="fb:app_id" content="436249433149897"/>
+	<meta property="fb:admins" content="1362407721"/>
+    
+    <script type="text/javascript">
+		var miAppControler = function() {};
+		miAppControler.prototype.commenting = 1;
+	</script>
+    <script src="/home/jkirk/MyWork/Code/js/jquery.min.js"></script>
+    <script src="/home/jkirk/MyWork/Code/Testing/qunit-1.10.0.js"></script>
+    <script src="/home/jkirk/rutl009d-trunks/jumuishi/public/javascripts/MI.js"></script>
+    <script src="/home/jkirk/rutl009d-trunks/jumuishi/public/javascripts/MI_Commenting.js"></script>
+    <script src="/home/jkirk/rutl009d-trunks/js_projects/js-libs/MI_Commenting_Facebook/js/MI_Commenting_Facebook.js"></script>
+    <script>
+		mi.commenting = new mi.Commenting();
+		mi.commenting.setConf({	accountName: "testdomain",
+								fbapp_id: "436249433149897"
+								});
+								
+    </script>
+    <script src="/home/jkirk/rutl009d-trunks/js_projects/js-libs/MI_Commenting_Facebook/test/micommenting_facebook_tests.js"></script>
+  </head>
+  <body>  	<div id="qunit"></div>
+  	<div id="qunit-fixture">
+	  	<div id="commentingStage"></div>
+	</div>
+  </body>
+</html>
